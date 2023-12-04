@@ -11,13 +11,6 @@
 body{
     background-color: #7cadf9;
 }
-
-.container-fluid  {
-    
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    justify-content: space-around;
-}
 .navbar-brand{
     font-size: 40px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -45,6 +38,19 @@ footer section a{
 }
 main{
     background-color: skyblue;
+
+}
+
+.diseño {
+        border: var(--secundarycolor) 4px solid;
+   margin-bottom: 20px;
+   background-color: white;
+
+}
+.diseño h3{
+    text-align: center;
+    color: var(--secundarycolor);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .contenedor{
     max-width: 100%;
@@ -60,21 +66,6 @@ main{
     margin-right: 10px;
 }
 
-
-.main {
-    background-color: skyblue;
-    display: flex;
-    display: grid;
-    margin: 5px;
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows: repeat(3, 450px);
-   
-    grid-template-areas: 
-    "area1 area2 area3 "
-    "area4 area5 area6 "
-    "area7 area8 area9 "
-    
-}
 main h1{
     
     text-align: center;
@@ -83,61 +74,16 @@ main h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration: underline;
 }
-.area {
-    
-    margin: 20px;
-border:#1c4c96 5px solid;
-height: 400px;
-width: 400px;
-background-color: white;
-}
 .img {
     width: 100%;
     height: 90%;
 }
-.area h3{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: medium;
-    color: #1c4c96;
-    text-align: center;
+.areas{
+    border: solid 3px black;
+   
 }
-.area:hover{
-    box-shadow: 0 8px 16px rgba(0,0,0, 0.5);
-}
-@media (max-width: 930px){
-         .main {
-            display: grid;
-            margin: 5px;
-            grid-template-columns:repeat(2, 1fr);
-            grid-template-rows: repeat(5, 450px);
-           
-            grid-template-areas: 
-            "area1 area2  "
-            "area3 area4  "
-            "area5 area6  " 
-            "area7 area8  "
-            "area9 area10 "
-    }
-}
-@media (max-width: 600px){
-    .main {
-        display: grid;
-        margin: 5px;
-        grid-template-columns:repeat(1, 1fr);
-        grid-template-rows: repeat(9, 450px);
-       
-        grid-template-areas: 
-        "area1 "
-        "area2"
-        "area3 "
-        "area4 "
-        "area5 "
-        "area6 "
-        "area7 "
-        "area8"
-        "area9 ";
-}
-}
+
+
 .rodamientos{
     background-color: var(--rodamientoscolor);
 }
@@ -147,9 +93,10 @@ background-color: white;
 .rodamientos h1 {
     color: var(--secundaryrodamientoscolor);
 }
-.rodamientos section div{
-    border:var(--secundaryrodamientoscolor) 5px solid ;
+.rodamientos .diseño{
+    border: var(--secundaryrodamientoscolor) solid 4px;
 }
+
 .rodamientos section div h3{
     color: var(--secundaryrodamientoscolor);
 }
@@ -162,9 +109,10 @@ background-color: white;
 .ferreteria h1{
     color: var(--secundaryferreteriacolor);
 }
-.ferreteria section div{
-    border:var(--secundaryferreteriacolor) 5px solid ;
+.ferreteria .diseño{
+    border: var(--secundaryferreteriacolor) solid 4px;
 }
+
 .ferreteria section div h3{
     color: var(--secundaryferreteriacolor);
 }
@@ -177,8 +125,9 @@ background-color: white;
 .buloneria h1{
     color: white;
 }
-.buloneria section div{
-    border:var(--secundarybuloneriacolor) 5px solid ;
+
+.buloneria .diseño{
+    border: var(--secundarybuloneriacolor) solid 4px;
 }
 .buloneria section div h3{
     color: var(--secundarybuloneriacolor);
@@ -189,7 +138,7 @@ background-color: white;
         justify-content: space-between;
         flex-direction: row;
         flex-wrap: wrap;
-       
+
 }
 .serviciotec section{
     border: 3px solid var(--secundarycolor);
